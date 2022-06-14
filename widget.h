@@ -21,7 +21,8 @@ private:
 
 private slots:
     void getFullName();
-    void clear();
+    void clearName();
+    void setTextColor();
 };
 
 #endif // WIDGET_H

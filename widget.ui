@@ -22,6 +22,9 @@
      <height>20</height>
     </rect>
    </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
   </widget>
   <widget class="QLabel" name="label">
    <property name="geometry">
@@ -127,6 +130,25 @@ background:white;</string>
    </property>
    <property name="text">
     <string>清空</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="setColor">
+   <property name="geometry">
+    <rect>
+     <x>290</x>
+     <y>130</y>
+     <width>71</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border:1px solid green;
+color:green;
+border-radius:10px;
+background:white;</string>
+   </property>
+   <property name="text">
+    <string>设置颜色</string>
    </property>
   </widget>
  </widget>

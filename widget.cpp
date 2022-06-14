@@ -10,7 +10,8 @@ Widget::Widget(QWidget *parent) :
     ui->lastname->setText("");
 
     connect(ui->getNameBtn,SIGNAL(clicked()),this,SLOT(getFullName()));
-    connect(ui->clear,SIGNAL(clicked()),this,SLOT(clear()));
+    connect(ui->clear,SIGNAL(clicked()),this,SLOT(clearName()));
+    connect(ui->setColor,SIGNAL(clicked()),this,SLOT(setTextColor()));
 }
 
 Widget::~Widget()
@@ -24,9 +25,15 @@ void Widget::getFullName()
     ui->fullname->setText(fullname);
 }
 
-void Widget::clear()
+void Widget::clearName()
 {
     ui->firstname->clear();
     ui->lastname->clear();
     ui->fullname->clear();
+}
+
+void Widget::setTextColor()
+{
+   ui->firstname->setStyleSheet("QLineEdit {color:red;}");
+   ui->lastname->setStyleSheet("QLineEdit {background:yellow;}");
 }
